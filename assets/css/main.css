@@ -1,0 +1,366 @@
+:root {
+  --v-base-color: black;
+  --v-apex-color: white;
+  --v-primary-color: #6d62e4;
+  --v-secondary-color: #c1e3ff;
+  --v-tetiary-color: #fa8685;
+  --v-primary-color-shade: #d6d4ff;
+  --v-primary-color-lighten: #e7e5fa;
+  --v-base-color-lighten: #868e9b;
+}
+
+.bg-v-apex-color {
+  background-color: var(--v-apex-color);
+}
+
+.bg-v-base-color {
+  background-color: var(--v-base-color);
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.bg-v-secondary-color {
+  background-color: var(--v-secondary-color);
+}
+
+.bg-v-primary-color {
+  background-color: var(--v-primary-color);
+}
+
+.bg-v-tetiary-color {
+  background-color: var(--v-tetiary-color);
+}
+
+.bg-v-primary-color--lighten {
+  background-color: var(--v-primary-color-lighten);
+}
+
+.text-v-apex-color {
+  color: var(--v-apex-color);
+}
+
+.text-v-base-color {
+  color: var(--v-base-color);
+}
+
+.text-v-base-color--lighten {
+  color: var(--v-base-color-lighten);
+}
+
+.text-v-primary-color {
+  color: var(--v-primary-color);
+}
+
+.text-v-primary-color-shade {
+  color: var(--v-primary-color-shade);
+}
+
+.text-v-primary-color--lighten {
+  color: var(--v-primary-color-lighten);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.header {
+  height: 100px;
+}
+
+.header__logo-wrapper {
+  width: 100px;
+}
+
+.header__logo {
+  width: 32px;
+  height: 32px;
+}
+
+.header__team-options {
+  margin-left: 1.5rem;
+  margin-right: 2.5rem;
+}
+
+.header__search-magnifying-glass {
+  left: 7%;
+}
+
+.header__search {
+  background-color: #f5f6f8;
+  padding-left: 3rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.6rem;
+  height: 2.5rem;
+  width: 15rem;
+}
+
+.content {
+  width: 70%;
+}
+
+.content__details {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  width: calc(100% - 100px);
+}
+
+.content__nav {
+  width: 100px;
+  flex: none;
+  padding-top: 8rem;
+}
+
+.content__nav-link {
+  color: var(--v-base-color);
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content__nav-link:hover {
+  color: var(--v-apex-color);
+  background-color: var(--v-base-color);
+  transition: 0.3s all ease;
+}
+
+.content__nav-link--active {
+  color: var(--v-apex-color);
+  background-color: var(--v-base-color);
+}
+
+.side-bar {
+  width: 30%;
+  padding: 0 2rem;
+}
+
+.side-bar__notification-badge {
+  height: 15px;
+  width: 15px;
+  font-size: 8px;
+  right: 0;
+}
+
+.side-bar__header-profile-img-holder {
+  height: 40px;
+  width: 40px;
+  background: #ffedef;
+  border-radius: 100%;
+  margin-right: 0.7rem;
+}
+
+.side-bar__header-profile-img {
+  height: 80%;
+  width: 80%;
+}
+
+.side-bar__members {
+  padding: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.side-bar__members-pics {
+  height: 32px;
+  width: 32px;
+  background-color: #eee;
+}
+
+.side-bar__members-pics--dark {
+  background-color: #ddd;
+}
+
+.side-bar__cta-heading {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.side-bar__cta-context {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.side-bar__cta-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.side-bar__members-legend {
+  height: 6px;
+  width: 6px;
+}
+
+.account-intro {
+  margin-bottom: 2rem;
+}
+
+.account-intro__heading {
+  font-size: 2.25rem;
+  margin-bottom: 0.3rem;
+}
+
+.account-intro__sub-heading {
+  font-size: 1.3rem;
+}
+
+.account-intro__btn {
+  border: 2px solid #eee;
+  padding: 0 1.2rem;
+  border-radius: 0.7rem;
+  height: 2.8rem;
+  margin-left: 0.5rem;
+}
+
+.account-balance__wrapper {
+  height: 140px;
+  border-radius: 1rem;
+}
+
+.account-balance__item {
+  width: 33.3%;
+  padding-left: 2rem;
+}
+
+.account-balance__item-img-holder {
+  background-color: #d6d4ff;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  flex: none;
+}
+
+.account-balance__item-content {
+  width: calc(100% - 48px);
+  padding-left: 1.5rem;
+}
+
+.account-balance__item-content-balance {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 0.1rem;
+  width: 100%;
+}
+
+.account-balance__item-content-balance-change {
+  background-color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.account-balance__item-content--has-seperator {
+  border-right: 1px solid var(--v-primary-color-shade);
+}
+
+.account-transaction__heading-wrapper {
+  margin-top: 3rem;
+}
+
+.account-transaction__heading {
+  font-size: 1.2rem;
+}
+
+.account-transaction__heading-btn {
+  padding: 0.7rem 2.3rem;
+  border-radius: 0.8rem;
+}
+
+.account-transaction__date {
+  border: 2px solid #eee;
+  padding: 0.5rem 0;
+  border-radius: 0.8rem;
+  width: 3.5rem;
+}
+
+.account-transaction__seperator {
+  height: 300px;
+  border-left: 2px dashed #ccc;
+  margin-top: 1.3rem;
+}
