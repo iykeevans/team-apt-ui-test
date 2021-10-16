@@ -381,56 +381,48 @@
             </div>
 
             <!-- account transaction details -->
-            <div class="account-transaction__heading-wrapper">
-              <div
-                class="flex items-center justify-between"
-                style="margin-bottom: 2.5rem"
-              >
-                <h3 class="account-transaction__heading fw-semibold">
-                  All Transactions
-                </h3>
+            <div
+              class="
+                account-transaction__heading-wrapper
+                flex
+                items-center
+                justify-between
+              "
+            >
+              <h3 class="account-transaction__heading fw-semibold">
+                All Transactions
+              </h3>
 
-                <button
-                  class="
-                    account-transaction__heading-btn
-                    bg-v-primary-color--lighten
-                    text-v-primary-color text-sm
-                    fw-medium
-                  "
-                >
-                  View All
-                </button>
-              </div>
+              <button
+                class="
+                  account-transaction__heading-btn
+                  bg-v-primary-color--lighten
+                  text-v-primary-color text-sm
+                  fw-medium
+                "
+              >
+                View All
+              </button>
             </div>
 
             <!-- account transaction period -->
             <div class="flex">
-              <section
-                class="p-relative flex justify-between"
-                style="width: 60%"
-              >
+              <section class="p-relative flex justify-between w-60">
                 <div
                   class="
+                    account-transaction__item
+                    account-transaction__item--dribbble
                     p-absolute
-                    bg-v-primary-color
                     flex
                     items-center
                     justify-between
                   "
-                  style="
-                    height: 80px;
-                    width: 400px;
-                    top: 7.5rem;
-                    border-top-right-radius: 3rem;
-                    border-bottom-right-radius: 3rem;
-                    background-color: #ffdaeb;
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                  "
                 >
                   <div>
                     <h2>Dribbble subscription</h2>
-                    <p style="margin-top: 0.3rem">October 24 x 5:30 Am</p>
+                    <p class="account-transaction__item-time">
+                      October 24 x 5:30 Am
+                    </p>
                   </div>
 
                   <div>
@@ -461,26 +453,19 @@
 
                 <div
                   class="
+                    account-transaction__item account-transaction__item--figma
                     p-absolute
                     bg-v-secondary-color
                     flex
                     items-center
                     justify-between
                   "
-                  style="
-                    height: 80px;
-                    width: 400px;
-                    top: 14rem;
-                    right: 1.5rem;
-                    border-top-right-radius: 3rem;
-                    border-bottom-right-radius: 3rem;
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                  "
                 >
                   <div>
                     <h2>Figma pro plan</h2>
-                    <p style="margin-top: 0.3rem">October 28 x 8:00 Am</p>
+                    <p class="account-transaction__item-time">
+                      October 28 x 8:00 Am
+                    </p>
                   </div>
 
                   <div
@@ -525,9 +510,7 @@
                   <div
                     class="account-transaction__date flex flex-col items-center"
                   >
-                    <span
-                      class="text-sm"
-                      style="color: #aaa; margin-bottom: 0.3rem"
+                    <span class="text-sm text-v-base-color--lighten mb-003"
                       >Mon</span
                     >
                     <span class="fw-semibold">27</span>
@@ -540,9 +523,7 @@
                   <div
                     class="account-transaction__date flex flex-col items-center"
                   >
-                    <span
-                      class="text-sm"
-                      style="color: #aaa; margin-bottom: 0.3rem"
+                    <span class="text-sm text-v-base-color--lighten mb-003"
                       >Tue</span
                     >
                     <span class="fw-semibold">28</span>
@@ -555,9 +536,7 @@
                   <div
                     class="account-transaction__date flex flex-col items-center"
                   >
-                    <span
-                      class="text-sm"
-                      style="color: #aaa; margin-bottom: 0.3rem"
+                    <span class="text-sm text-v-base-color--lighten mb-003"
                       >Wed</span
                     >
                     <span class="fw-semibold">29</span>
@@ -570,9 +549,7 @@
                   <div
                     class="account-transaction__date flex flex-col items-center"
                   >
-                    <span
-                      class="text-sm"
-                      style="color: #aaa; margin-bottom: 0.3rem"
+                    <span class="text-sm text-v-base-color--lighten mb-003"
                       >Thu</span
                     >
                     <span class="fw-semibold">30</span>
@@ -582,7 +559,7 @@
                 </div>
               </section>
 
-              <section style="width: 40%"></section>
+              <section class="w-40"></section>
             </div>
           </section>
         </div>
@@ -591,8 +568,7 @@
       <!-- side bar -->
       <aside class="side-bar bg-v-secondary-color">
         <section
-          class="flex items-center justify-between"
-          style="height: 100px"
+          class="side-bar__header-wrapper flex items-center justify-between"
         >
           <!-- notification bell -->
           <div class="p-relative">
@@ -654,10 +630,7 @@
 
         <section class="side-bar__members flex flex-col bg-v-apex-color">
           <!-- heading -->
-          <div
-            class="flex items-center justify-between"
-            style="margin-bottom: 2rem"
-          >
+          <div class="flex items-center justify-between mb-2">
             <h3 class="fw-semibold">Active Members</h3>
 
             <button class="flex items-center bg-transparent">
@@ -672,19 +645,17 @@
 
           <!-- member circles -->
           <div
-            class="p-relative flex items-center"
-            style="margin-bottom: 2.3rem; border-radius: 0.5rem"
+            class="side-bar__members-pics-wrapper p-relative flex items-center"
           >
             <div
               class="
                 p-absolute
-                side-bar__members-pics
+                side-bar__members-pics side-bar__members-pics--one
                 rounded-full
                 flex
                 items-center
                 justify-center
               "
-              style="background-color: #ffedef"
             >
               <img
                 src="./assets/images/Avatar.svg"
@@ -696,13 +667,12 @@
             <div
               class="
                 p-absolute
-                side-bar__members-pics side-bar__members-pics--dark
+                side-bar__members-pics side-bar__members-pics--two
                 rounded-full
                 flex
                 justify-center
                 items-center
               "
-              style="left: 20px; background-color: #e0ddff"
             >
               <img
                 src="./assets/images/avatar-4.svg"
@@ -714,13 +684,12 @@
             <div
               class="
                 p-absolute
-                side-bar__members-pics
+                side-bar__members-pics side-bar__members-pics--three
                 rounded-full
                 flex
                 justify-center
                 items-center
               "
-              style="left: 40px; background-color: #f4d150"
             >
               <img
                 src="./assets/images/avatar-2.svg"
@@ -732,13 +701,12 @@
             <div
               class="
                 p-absolute
-                side-bar__members-pics side-bar__members-pics--dark
+                side-bar__members-pics side-bar__members-pics--four
                 rounded-full
                 flex
                 justify-center
                 items-center
               "
-              style="left: 60px; background-color: #d2eff3"
             >
               <img
                 src="./assets/images/avatar-3.svg"
@@ -749,69 +717,53 @@
           </div>
 
           <!-- member details -->
-          <div
-            style="
-              background: #f3f6fd;
-              padding: 1.3rem 1rem;
-              border-radius: 0.5rem;
-            "
-          >
+          <div class="side-bar__member-details">
             <!-- member percentages -->
-            <div
-              class="flex"
-              style="
-                height: 5px;
-                width: 100%;
-                border-radius: 1rem;
-                margin-bottom: 1rem;
-              "
-            >
+            <div class="flex side-bar__member-percentages-wrapper">
               <div
-                class="bg-v-secondary-color"
-                style="
-                  width: 60%;
-                  border-bottom-left-radius: 1rem;
-                  border-top-left-radius: 1rem;
+                class="
+                  bg-v-secondary-color
+                  w-60
+                  side-bar__member-percentage-start
                 "
               ></div>
 
-              <div class="bg-v-primary-color" style="width: 30%"></div>
+              <div class="bg-v-primary-color w-30"></div>
 
               <div
-                class="bg-v-tetiary-color"
-                style="
-                  width: 10%;
-                  border-bottom-right-radius: 1rem;
-                  border-top-right-radius: 1rem;
-                "
+                class="bg-v-tetiary-color side-bar__member-percentage-end w-10"
               ></div>
             </div>
 
             <!-- member stats -->
             <div class="flex">
-              <div style="width: 33.3%">
-                <div class="flex items-center" style="margin-bottom: 0.3rem">
+              <div class="w-1-of-3">
+                <div class="flex items-center mb-003">
                   <div
                     class="
                       side-bar__members-legend
                       rounded-full
                       bg-v-secondary-color
                     "
-                    style="height: 6px; width: 6px"
                   ></div>
 
                   <span
-                    class="text-xs text-v-base-color--lighten"
-                    style="margin-left: 9px"
+                    class="
+                      side-bar__members-category-name
+                      text-xs
+                      text-v-base-color--lighten
+                    "
                     >UI Designer</span
                   >
                 </div>
 
-                <div class="fw-semibold" style="margin-left: 15px">60%</div>
+                <div class="fw-semibold side-bar__members-category-percent">
+                  60%
+                </div>
               </div>
 
-              <div style="width: 33.3%">
-                <div class="flex items-center" style="margin-bottom: 0.3rem">
+              <div class="w-1-of-3">
+                <div class="flex items-center mb-003">
                   <div
                     class="
                       side-bar__members-legend
@@ -821,17 +773,22 @@
                   ></div>
 
                   <span
-                    class="text-xs text-v-base-color--lighten"
-                    style="margin-left: 9px"
+                    class="
+                      side-bar__members-category-name
+                      text-xs
+                      text-v-base-color--lighten
+                    "
                     >Illustration</span
                   >
                 </div>
 
-                <div class="fw-semibold" style="margin-left: 15px">30%</div>
+                <div class="fw-semibold side-bar__members-category-percent">
+                  30%
+                </div>
               </div>
 
-              <div style="width: 33.3%">
-                <div class="flex items-center" style="margin-bottom: 0.3rem">
+              <div class="w-1-of-3">
+                <div class="flex items-center mb-003">
                   <div
                     class="
                       side-bar__members-legend
@@ -841,19 +798,24 @@
                   ></div>
 
                   <span
-                    class="text-xs text-v-base-color--lighten"
-                    style="margin-left: 9px"
+                    class="
+                      side-bar__members-category-name
+                      text-xs
+                      text-v-base-color--lighten
+                    "
                     >Leader</span
                   >
                 </div>
 
-                <div class="fw-semibold" style="margin-left: 15px">10%</div>
+                <div class="fw-semibold side-bar__members-category-percent">
+                  10%
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section style="margin-top: 2rem">
+        <section class="mt-2">
           <h2 class="side-bar__cta-heading fw-semibold">Upgrade account</h2>
 
           <p class="side-bar__cta-context">
