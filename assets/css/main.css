@@ -65,6 +65,18 @@
   border-radius: 100%;
 }
 
+.mb-003 {
+  margin-bottom: 0.3rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
 * {
   border: none;
   padding: 0;
@@ -140,6 +152,26 @@
 
 .w-100 {
   width: 100%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-1-of-3 {
+  width: 33.3%;
 }
 
 .main {
@@ -221,6 +253,10 @@
   padding: 0 2rem;
 }
 
+.side-bar__header-wrapper {
+  height: 100px;
+}
+
 .side-bar__notification-badge {
   height: 15px;
   width: 15px;
@@ -247,14 +283,57 @@
   border-radius: 0.5rem;
 }
 
+.side-bar__members-pics-wrapper {
+  margin-bottom: 2.3rem;
+  border-radius: 0.5rem;
+}
+
 .side-bar__members-pics {
   height: 32px;
   width: 32px;
   background-color: #eee;
 }
 
-.side-bar__members-pics--dark {
-  background-color: #ddd;
+.side-bar__members-pics--one {
+  background-color: #ffedef;
+}
+
+.side-bar__members-pics--two {
+  left: 20px;
+  background-color: #e0ddff;
+}
+
+.side-bar__members-pics--three {
+  left: 40px;
+  background-color: #f4d150;
+}
+
+.side-bar__members-pics--four {
+  left: 60px;
+  background-color: #d2eff3;
+}
+
+.side-bar__member-details {
+  background: #f3f6fd;
+  padding: 1.3rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.side-bar__member-percentages-wrapper {
+  height: 5px;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.side-bar__member-percentage-start {
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.side-bar__member-percentage-end {
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .side-bar__cta-heading {
@@ -275,6 +354,14 @@
 .side-bar__members-legend {
   height: 6px;
   width: 6px;
+}
+
+.side-bar__members-category-name {
+  margin-left: 9px;
+}
+
+.side-bar__members-category-percent {
+  margin-left: 15px;
 }
 
 .account-intro {
@@ -341,6 +428,7 @@
 
 .account-transaction__heading-wrapper {
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .account-transaction__heading {
@@ -363,4 +451,29 @@
   height: 300px;
   border-left: 2px dashed #ccc;
   margin-top: 1.3rem;
+}
+
+.account-transaction__item {
+  height: 80px;
+  width: 400px;
+  top: 7.5rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.account-transaction__item--dribbble {
+  top: 7.5rem;
+  background-color: #ffdaeb;
+}
+
+.account-transaction__item--figma {
+  top: 14rem;
+  right: 1.5rem;
+}
+
+.account-transaction__item-time {
+  margin-top: 0.3rem;
 }
