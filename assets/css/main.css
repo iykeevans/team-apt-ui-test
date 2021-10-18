@@ -61,6 +61,14 @@
   color: var(--v-primary-color-lighten);
 }
 
+.text-v-tetiary-color {
+  color: var(--v-tetiary-color);
+}
+
+.text-right {
+  text-align: right;
+}
+
 .rounded-full {
   border-radius: 100%;
 }
@@ -158,6 +166,14 @@
   width: 60%;
 }
 
+.w-55 {
+  width: 55%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
 .w-40 {
   width: 40%;
 }
@@ -201,6 +217,7 @@
 }
 
 .header__search {
+  background-image: linear-gradient(to right, #ebf2f8, #f5f6f8);
   background-color: #f5f6f8;
   padding-left: 3rem;
   padding-right: 0.5rem;
@@ -240,12 +257,14 @@
 .content__nav-link:hover {
   color: var(--v-apex-color);
   background-color: var(--v-base-color);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   transition: 0.3s all ease;
 }
 
 .content__nav-link--active {
   color: var(--v-apex-color);
   background-color: var(--v-base-color);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .side-bar {
@@ -378,7 +397,7 @@
 }
 
 .account-intro__btn {
-  border: 2px solid #eee;
+  border: 1px solid #eee;
   padding: 0 1.2rem;
   border-radius: 0.7rem;
   height: 2.8rem;
@@ -388,6 +407,7 @@
 .account-balance__wrapper {
   height: 140px;
   border-radius: 1rem;
+  box-shadow: 4px 6px 40px rgba(109, 98, 228, 0.6);
 }
 
 .account-balance__item {
@@ -441,7 +461,7 @@
 }
 
 .account-transaction__date {
-  border: 2px solid #eee;
+  border: 1px solid #eee;
   padding: 0.5rem 0;
   border-radius: 0.8rem;
   width: 3.5rem;
@@ -476,4 +496,27 @@
 
 .account-transaction__item-time {
   margin-top: 0.3rem;
+}
+
+.account-transaction__tachometer-section {
+  padding-left: 2rem;
+}
+
+.account-transaction__tachometer-wrapper {
+  box-shadow: 30px 6px 50px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.account-transaction__tachometer-header {
+  margin-bottom: 1.3rem;
+}
+
+.account-transaction__tachometer-footer {
+  margin-top: 1.8rem;
+}
+
+.account-transaction__tachometer-seperator {
+  height: 2rem;
+  border: 1px solid #eee;
 }
