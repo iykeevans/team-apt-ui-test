@@ -228,6 +228,11 @@
   width: 15rem;
 }
 
+.header__hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 .content {
   width: 70%;
 }
@@ -498,8 +503,13 @@
   margin-top: 0.3rem;
 }
 
+.account-transaction__period {
+  width: 55%;
+}
+
 .account-transaction__tachometer-section {
   padding-left: 2rem;
+  width: 45%;
 }
 
 .account-transaction__tachometer-wrapper {
@@ -519,4 +529,107 @@
 .account-transaction__tachometer-seperator {
   height: 2rem;
   border: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content__details {
+    width: 100%;
+  }
+
+  .content__nav {
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+
+    left: -9999px;
+    transition: left 0.5s ease-in;
+    padding-top: 2rem;
+  }
+
+  .content__nav--in-view {
+    left: 0;
+    transition: left 0.5s ease-in;
+  }
+
+  .flex-sm-col {
+    flex-direction: column;
+  }
+
+  .account-balance__wrapper {
+    height: unset;
+    padding: 2rem 0;
+  }
+
+  .account-balance__item-content--has-seperator {
+    border-right: unset;
+  }
+
+  .account-balance__item {
+    width: unset;
+    padding: unset;
+    margin-bottom: 2rem;
+  }
+
+  .account-balance__item:last-child {
+    margin-bottom: unset;
+  }
+
+  .account-transaction__period {
+    width: 100%;
+  }
+
+  .account-transaction__tachometer-section {
+    width: 100%;
+    padding-left: unset;
+  }
+
+  .account-transaction__item {
+    width: 300px;
+  }
+
+  .account-intro__btn {
+    margin-right: 0.5rem;
+    margin-left: unset;
+  }
+
+  .account-intro__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .justify-sm-start {
+    justify-content: flex-start;
+  }
+
+  .items-sm-start {
+    align-items: flex-start;
+  }
+
+  .header__search-magnifying-glass {
+    position: unset;
+  }
+
+  .h-wrapper {
+    padding-right: 10%;
+  }
+
+  .header__hamburger {
+    display: unset;
+    margin-left: 0.5rem;
+  }
 }
