@@ -70,53 +70,67 @@
             </a>
           </div>
 
-          <button
-            class="
-              header__team-options
-              bg-transparent
-              flex
-              items-center
-              fw-medium
-              cursor-pointer
-            "
-          >
-            Team dek
+          <div class="h-wrapper flex items-center">
+            <button
+              class="
+                header__team-options
+                bg-transparent
+                flex
+                items-center
+                fw-medium
+                cursor-pointer
+              "
+            >
+              Team dek
 
-            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
-              <path
-                fill="#6d62e4"
-                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                <path
+                  fill="#6d62e4"
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </button>
+
+            <div class="p-relative flex items-center">
+              <svg
+                class="p-absolute header__search-magnifying-glass"
+                width="18"
+                height="18"
+                viewBox="0 0 91 91"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M73.7178 62.8835C79.2288 54.6804 81.4886 44.7196 80.0571 34.9414C78.6255 25.1633 73.605 16.2683 65.9737 9.9894C58.3424 3.71049 48.6469 0.497397 38.7762 0.97611C28.9054 1.45482 19.5664 5.59105 12.5785 12.579C5.59064 19.5669 1.45447 28.906 0.975823 38.7767C0.497173 48.6475 3.71033 58.3429 9.98929 65.9742C16.2682 73.6054 25.1633 78.6259 34.9414 80.0574C44.7195 81.4889 54.6804 79.229 62.8834 73.7179L77.9217 88.7561C79.3585 90.1928 81.3071 91 83.3389 91C85.3708 91 87.3194 90.1928 88.7561 88.7561C90.1928 87.3194 91 85.3708 91 83.3389C91 81.3071 90.1928 79.3585 88.7561 77.9217L73.7178 62.8835ZM40.7384 71.2839C34.6971 71.2838 28.7914 69.4924 23.7683 66.136C18.7451 62.7796 14.83 58.009 12.5182 52.4276C10.2063 46.8461 9.60137 40.7045 10.78 34.7792C11.9586 28.854 14.8678 23.4113 19.1396 19.1395C23.4115 14.8676 28.8542 11.9585 34.7794 10.7799C40.7047 9.6013 46.8463 10.2062 52.4278 12.5181C58.0092 14.8301 62.7797 18.7451 66.1361 23.7683C69.4925 28.7915 71.2839 34.6971 71.2839 40.7385C71.2748 48.8368 68.0536 56.6009 62.3272 62.3273C56.6008 68.0537 48.8367 71.2747 40.7384 71.2839V71.2839Z"
+                  fill="black"
+                />
+              </svg>
+
+              <input
+                type="search"
+                name=""
+                id=""
+                placeholder="Search anything..."
+                class="header__search text-xs"
               />
-            </svg>
-          </button>
+            </div>
 
-          <div class="p-relative flex items-center">
             <svg
-              class="p-absolute header__search-magnifying-glass"
-              width="18"
-              height="18"
-              viewBox="0 0 91 91"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              class="header__hamburger"
+              style="width: 24px; height: 24px"
+              viewBox="0 0 24 24"
+              id="hamburger"
             >
               <path
-                d="M73.7178 62.8835C79.2288 54.6804 81.4886 44.7196 80.0571 34.9414C78.6255 25.1633 73.605 16.2683 65.9737 9.9894C58.3424 3.71049 48.6469 0.497397 38.7762 0.97611C28.9054 1.45482 19.5664 5.59105 12.5785 12.579C5.59064 19.5669 1.45447 28.906 0.975823 38.7767C0.497173 48.6475 3.71033 58.3429 9.98929 65.9742C16.2682 73.6054 25.1633 78.6259 34.9414 80.0574C44.7195 81.4889 54.6804 79.229 62.8834 73.7179L77.9217 88.7561C79.3585 90.1928 81.3071 91 83.3389 91C85.3708 91 87.3194 90.1928 88.7561 88.7561C90.1928 87.3194 91 85.3708 91 83.3389C91 81.3071 90.1928 79.3585 88.7561 77.9217L73.7178 62.8835ZM40.7384 71.2839C34.6971 71.2838 28.7914 69.4924 23.7683 66.136C18.7451 62.7796 14.83 58.009 12.5182 52.4276C10.2063 46.8461 9.60137 40.7045 10.78 34.7792C11.9586 28.854 14.8678 23.4113 19.1396 19.1395C23.4115 14.8676 28.8542 11.9585 34.7794 10.7799C40.7047 9.6013 46.8463 10.2062 52.4278 12.5181C58.0092 14.8301 62.7797 18.7451 66.1361 23.7683C69.4925 28.7915 71.2839 34.6971 71.2839 40.7385C71.2748 48.8368 68.0536 56.6009 62.3272 62.3273C56.6008 68.0537 48.8367 71.2747 40.7384 71.2839V71.2839Z"
-                fill="black"
+                fill="currentColor"
+                d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
               />
             </svg>
-
-            <input
-              type="search"
-              name=""
-              id=""
-              placeholder="Search anything..."
-              class="header__search text-xs"
-            />
           </div>
         </header>
 
         <div class="flex">
-          <nav class="content__nav flex flex-col items-center">
+          <nav class="content__nav flex flex-col items-center" id="content-nav">
             <!-- chart -->
             <a
               href="#"
@@ -204,8 +218,15 @@
           <!-- content section -->
           <section class="content__details">
             <!--account introduction  -->
-            <div class="account-intro flex justify-between items-center">
-              <div>
+            <div
+              class="
+                account-intro
+                flex flex-sm-col
+                justify-between justify-sm-start
+                items-center items-sm-start
+              "
+            >
+              <div class="account-intro__header">
                 <h1 class="account-intro__heading fw-semibold">
                   Good Evening Team!
                 </h1>
@@ -251,7 +272,7 @@
             <div
               class="
                 account-balance__wrapper
-                flex
+                flex flex-sm-col
                 items-center
                 bg-v-primary-color
                 text-v-apex-color
@@ -406,8 +427,15 @@
             </div>
 
             <!-- account transaction period -->
-            <div class="flex">
-              <section class="p-relative flex justify-between w-55">
+            <div class="flex flex-sm-col">
+              <section
+                class="
+                  account-transaction__period
+                  p-relative
+                  flex
+                  justify-between
+                "
+              >
                 <div
                   class="
                     account-transaction__item
@@ -559,7 +587,7 @@
                 </div>
               </section>
 
-              <section class="w-45 account-transaction__tachometer-section">
+              <section class="account-transaction__tachometer-section">
                 <div class="account-transaction__tachometer-wrapper">
                   <div
                     class="
@@ -683,7 +711,9 @@
                       >
                     </div>
 
-                    <div class="account-transaction__tachometer-seperator"></div>
+                    <div
+                      class="account-transaction__tachometer-seperator"
+                    ></div>
 
                     <div class="flex flex-col text-right">
                       <span class="text-sm">Income</span>
@@ -987,5 +1017,13 @@
         </section>
       </aside>
     </main>
+
+    <script>
+      document.getElementById("hamburger").addEventListener("click", () => {
+        document
+          .getElementById("content-nav")
+          .classList.toggle("content__nav--in-view");
+      });
+    </script>
   </body>
 </html>
